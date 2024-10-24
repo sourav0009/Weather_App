@@ -6,9 +6,9 @@ async function chakeWeather() {
     var data = await responce.json();
     console.log(data)
     document.getElementById("city").innerHTML = data.name;
-    document.getElementById("temp").innerHTML = data.main.temp;
-    document.getElementById("Humidity").innerHTML = data.main.humidity;
-    document.getElementById("wind").innerHTML = data.wind.speed;
+    document.getElementById("temp").innerHTML = Math.round(data.main.temp) + "°C";
+    document.getElementById("Humidity").innerHTML = data.main.humidity + "%";
+    document.getElementById("wind").innerHTML = data.wind.speed + "km/h";
 
 }
 chakeWeather();
