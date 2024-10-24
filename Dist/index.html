@@ -9,11 +9,34 @@
 </head>
 
 <body>
-    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="flex items-center justify-center min-h-screen bg-slate-900">
         <div class=" p-6 bg-green-300 rounded-lg shadow-lg">
             <div class=" w-96 flex items-center justify-around">
-                <input class="p-2 border-0 outline-0  flex-1 mr-6 font-medium rounded-2xl" type="text" placeholder="Enter the City Name" spellcheck="false">
-                <button class=" border-0 outline-0 rounded-full"><img src="./images/search.png" class=" rounded-full w-10"></button>
+                <input class="p-2 border-0 outline-0  flex-1 mr-6 font-medium rounded-2xl" type="text"
+                    placeholder="Enter the City Name" spellcheck="false">
+                <button class=" border-0 outline-0 rounded-full"><img src="./images/search.png"
+                        class=" rounded-full w-10"></button>
+            </div>
+            <div id="weather" class="  flex items-center flex-col">
+                <img src="./images/rain.png">
+                <h1 id="temp" class=" text-2xl font-bold">22°C</h1>
+                <h2 id="city" class=" text-2xl font-bold">Kolkata</h2>
+            </div>
+            <div id="details" class=" flex items-center justify-around mt-8">
+                <div id="col" class=" flex items-center text-left space-x-2">
+                    <img class=" h-10" src="./images/humidity.png">
+                    <div class="">
+                        <p id="Humidity" class="hummanity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div id="col" class=" flex items-center text-left space-x-2">
+                    <img class=" h-12" src="./images/wind.png">
+                    <div class="">
+                        <p id="wind" class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
